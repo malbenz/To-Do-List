@@ -1,0 +1,111 @@
+<html>
+<head>
+</head>
+<body>
+
+<h2>To Do!</h2>
+<!--build button that will add an additional text box that a todo can be typed into-->
+<form id="form1">
+<input type = "button" value = "Add To Do" onclick="addbox()">
+</form>
+
+<!--declare divs for up to ten todos for text boxes and a "done!" button for each of those so that the field can be deleted -->
+<div id = "todo1"></div>
+<div id = "button1" onClick="clear1()"></div>
+<div id = "todo2"></div>
+<div id = "button2" onClick="clear2()"></div>
+<div id = "todo3"></div>
+<div id = "button3" onClick="clear3()"></div>
+<div id = "todo4"></div>
+<div id = "button4" onClick="clear4()"></div>
+<div id = "todo5"></div>
+<div id = "button5" onClick="clear5()"></div>
+<div id = "todo6"></div>
+<div id = "button6" onClick="clear6()"></div>
+<div id = "todo7"></div>
+<div id = "button7" onClick="clear7()"></div>
+<div id = "todo8"></div>
+<div id = "button8" onClick="clear8()"></div>
+<div id = "todo9"></div>
+<div id = "button9" onClick="clear9()"></div>
+<div id = "todo10"></div>
+<div id = "button10" onClick="clear10()"></div>
+
+<!--function to build divs including textbox and button incrementing up to ten-->
+<script type = "text/javascript">
+var i = 1;
+function addbox() {
+document.getElementById('todo'+[i]).innerHTML =  "<input type='text' size = '20'>";
+document.getElementById('button'+[i]).innerHTML =  "<input type='button' value='Done!'>";
+i++;	
+}
+</script>
+
+<!--button clear function to delete associated text box and button based on what button is clicked-->
+<script type = "text/javascript">
+function clear1()   {
+document.getElementById('todo1').textContent = "";
+document.getElementById('button1').innerHTML =  "";
+}
+
+function clear2()   {
+document.getElementById('todo2').textContent = "";
+document.getElementById('button2').innerHTML =  "";
+}
+
+function clear3()   {
+document.getElementById('todo3').textContent = "";
+document.getElementById('button3').innerHTML =  "";
+}
+
+function clear4()   {
+document.getElementById('todo4').textContent = "";
+document.getElementById('button4').innerHTML =  "";
+}
+
+function clear5()   {
+document.getElementById('todo5').textContent = "";
+document.getElementById('button5').innerHTML =  "";
+}
+
+function clear2()   {
+document.getElementById('todo2').textContent = "";
+document.getElementById('button2').innerHTML =  "";
+}
+
+function clear2()   {
+document.getElementById('todo2').textContent = "";
+document.getElementById('button2').innerHTML =  "";
+}
+
+function clear6()   {
+document.getElementById('todo6').textContent = "";
+document.getElementById('button6').innerHTML =  "";
+}
+
+function clear7()   {
+document.getElementById('todo7').textContent = "";
+document.getElementById('button7').innerHTML =  "";
+}
+
+function clear8()   {
+document.getElementById('todo8').textContent = "";
+document.getElementById('button8').innerHTML =  "";
+}
+
+function clear9()   {
+document.getElementById('todo9').textContent = "";
+document.getElementById('button9').innerHTML =  "";
+}
+
+function clear10()   {
+document.getElementById('todo10').textContent = "";
+document.getElementById('button10').innerHTML =  "";
+}
+
+</script>
+
+
+
+</body>
+</html>

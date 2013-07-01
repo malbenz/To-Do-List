@@ -1,0 +1,89 @@
+<html>
+<head>
+</head>
+<body>
+
+<h2>To Do!</h2>
+<form>
+<!--build for with entry field and button that will call function to add the todo-->
+<input id="todotext" type="text" name="todoenter">
+<input type = "button" value = "Add To Do" onClick="addbox()">
+</form>
+
+<!--build to do fields that will go away when clicked-->
+<div id = "todo1" onClick="clear1()"></div>
+<div id = "todo2" onClick="clear2()"></div>
+<div id = "todo3" onClick="clear3()"></div>
+<div id = "todo4" onClick="clear4()"></div>
+<div id = "todo5" onClick="clear5()"></div>
+<div id = "todo6" onClick="clear6()"></div>
+<div id = "todo7" onClick="clear7()"></div>
+<div id = "todo8" onClick="clear8()"></div>
+<div id = "todo9" onClick="clear9()"></div>
+<div id = "todo10" onClick="clear10()"></div>
+
+<script type = "text/javascript">
+<!--declare variable to increment through div-->
+var i = 1;
+<!--function adds additional text box with 
+function addbox() {
+document.getElementById('todo'+[i]).innerHTML =  "<input type='text' size = '20'>";
+<!--Increment the div so as to add additional to dos-->
+i++;	
+}
+
+<!--The following function is designed to pull value from todotext by passing the value within the text box. It would be added to onClick function of Add To Do-->
+<!--function setValue(todotext) {document.getElementById('todo1').value = todotext.value;}-->
+
+<!--The following function is another attempt to pull elements of text box and add it to the div by using document.getelements, but value is not an option to pull when I type it-->
+<!--function addText() {document.getElementById('todo1').value = document.getElementsByName("todoenter").value}-->
+
+</script>
+
+<!-- functions to clear boxes for each div-->
+<script type = "text/javascript">
+function clear1()   {
+document.getElementById('todo1').textContent = "";
+}
+
+function clear2()   {
+document.getElementById('todo2').textContent = "";
+}
+
+function clear3()   {
+document.getElementById('todo3').textContent = "";
+}
+
+function clear4()   {
+document.getElementById('todo4').textContent = "";
+}
+
+function clear5()   {
+document.getElementById('todo5').textContent = "";
+}
+
+function clear6()   {
+document.getElementById('todo6').textContent = "";
+}
+
+function clear7()   {
+document.getElementById('todo7').textContent = "";
+}
+
+function clear8()   {
+document.getElementById('todo8').textContent = "";
+}
+
+function clear9()   {
+document.getElementById('todo9').textContent = "";
+}
+
+function clear10()   {
+document.getElementById('todo10').textContent = "";
+}
+</script>
+
+
+
+</body>
+</html>
